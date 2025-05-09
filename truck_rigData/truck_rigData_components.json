@@ -1,0 +1,520 @@
+{
+    "8ff9e1a8-29c2-11f0-a134-846993801060": {
+        "name": "master_M",
+        "cmpt_tag": "global_01",
+        "guides_data": [
+            {
+                "name": "master_M_root",
+                "world_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        ],
+        "settings": {
+            "inputs": [
+                {
+                    "name": "componentPosition",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "globalOutput",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "n_offsets": 1
+        }
+    },
+    "99001322-29c2-11f0-8b57-846993801060": {
+        "name": "truck_body_M",
+        "cmpt_tag": "single_point_01",
+        "guides_data": [
+            {
+                "name": "truck_body_M_point",
+                "world_matrix": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        ],
+        "settings": {
+            "inputs": [
+                {
+                    "name": "componentPosition",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outputWorldMatrix",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "joints": true,
+            "create_control": true,
+            "movable_pivot": true
+        }
+    },
+    "b2e84595-29c2-11f0-b5f6-846993801060": {
+        "name": "backDoor_L",
+        "cmpt_tag": "single_point_01",
+        "guides_data": [
+            {
+                "name": "backDoor_L_point",
+                "world_matrix": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -1.2246467991473532e-16,
+                    0.0,
+                    -1.2246467991473532e-16,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    10.161256790161133,
+                    19.54975128173828,
+                    -30.859375,
+                    1.0
+                ]
+            }
+        ],
+        "settings": {
+            "inputs": [
+                {
+                    "name": "componentPosition",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outputWorldMatrix",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "joints": true,
+            "create_control": true,
+            "movable_pivot": false
+        }
+    },
+    "b716e6dc-29c2-11f0-8163-846993801060": {
+        "name": "backDoor_R",
+        "cmpt_tag": "single_point_01",
+        "guides_data": [
+            {
+                "name": "backDoor_R_point",
+                "world_matrix": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    -10.161256790161133,
+                    19.54975128173828,
+                    -30.859375,
+                    1.0
+                ]
+            }
+        ],
+        "settings": {
+            "inputs": [
+                {
+                    "name": "componentPosition",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outputWorldMatrix",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "joints": true,
+            "create_control": true,
+            "movable_pivot": false
+        }
+    },
+    "154f3c49-29c3-11f0-8238-846993801060": {
+        "name": "wheel001_L",
+        "cmpt_tag": "wheel_01",
+        "guides_data": [
+            {
+                "name": "wheel001_L_wheel",
+                "world_matrix": [
+                    4.440892098500626e-16,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    4.440892098500626e-16,
+                    0.0,
+                    14.876174926757812,
+                    5.425958633422852,
+                    28.547096252441406,
+                    1.0
+                ]
+            }
+        ],
+        "settings": {
+            "inputs": [
+                {
+                    "name": "componentPosition",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                },
+                {
+                    "name": "radius",
+                    "index": 1,
+                    "type": "double"
+                },
+                {
+                    "name": "wheelLocal_mtx",
+                    "index": 2,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outputWorldMatrix",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "joints": true,
+            "wheel_radius": 3.5,
+            "wheel_axis_plane": "xy"
+        }
+    },
+    "53048aa7-29c3-11f0-8e37-846993801060": {
+        "name": "wheel002_L",
+        "cmpt_tag": "wheel_01",
+        "guides_data": [
+            {
+                "name": "wheel002_L_wheel",
+                "world_matrix": [
+                    4.440892098500626e-16,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    4.440892098500626e-16,
+                    0.0,
+                    14.876174926757812,
+                    5.425958633422852,
+                    3.2764673233032227,
+                    1.0
+                ]
+            }
+        ],
+        "settings": {
+            "inputs": [
+                {
+                    "name": "componentPosition",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                },
+                {
+                    "name": "radius",
+                    "index": 1,
+                    "type": "double"
+                },
+                {
+                    "name": "wheelLocal_mtx",
+                    "index": 2,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outputWorldMatrix",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "joints": true,
+            "wheel_radius": 3.5,
+            "wheel_axis_plane": "xy"
+        }
+    },
+    "59705cc0-29c3-11f0-81f2-846993801060": {
+        "name": "wheel003_L",
+        "cmpt_tag": "wheel_01",
+        "guides_data": [
+            {
+                "name": "wheel003_L_wheel",
+                "world_matrix": [
+                    4.440892098500626e-16,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    -1.0,
+                    0.0,
+                    4.440892098500626e-16,
+                    0.0,
+                    14.876174926757812,
+                    5.425958633422852,
+                    -19.11764144897461,
+                    1.0
+                ]
+            }
+        ],
+        "settings": {
+            "inputs": [
+                {
+                    "name": "componentPosition",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                },
+                {
+                    "name": "radius",
+                    "index": 1,
+                    "type": "double"
+                },
+                {
+                    "name": "wheelLocal_mtx",
+                    "index": 2,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outputWorldMatrix",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "joints": true,
+            "wheel_radius": 3.5,
+            "wheel_axis_plane": "xy"
+        }
+    },
+    "60138999-29c3-11f0-9cca-846993801060": {
+        "name": "wheel001_R",
+        "cmpt_tag": "wheel_01",
+        "guides_data": [
+            {
+                "name": "wheel001_R_wheel",
+                "world_matrix": [
+                    4.440892098500626e-16,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -4.440892098500626e-16,
+                    0.0,
+                    -14.876174926757812,
+                    5.425958633422852,
+                    28.547096252441406,
+                    1.0
+                ]
+            }
+        ],
+        "settings": {
+            "inputs": [
+                {
+                    "name": "componentPosition",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                },
+                {
+                    "name": "radius",
+                    "index": 1,
+                    "type": "double"
+                },
+                {
+                    "name": "wheelLocal_mtx",
+                    "index": 2,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outputWorldMatrix",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "joints": true,
+            "wheel_radius": 3.5,
+            "wheel_axis_plane": "xy"
+        }
+    },
+    "650ad2f7-29c3-11f0-8516-846993801060": {
+        "name": "wheel002_R",
+        "cmpt_tag": "wheel_01",
+        "guides_data": [
+            {
+                "name": "wheel002_R_wheel",
+                "world_matrix": [
+                    4.440892098500626e-16,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -4.440892098500626e-16,
+                    0.0,
+                    -14.876174926757812,
+                    5.425958633422852,
+                    3.2764673233032227,
+                    1.0
+                ]
+            }
+        ],
+        "settings": {
+            "inputs": [
+                {
+                    "name": "componentPosition",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                },
+                {
+                    "name": "radius",
+                    "index": 1,
+                    "type": "double"
+                },
+                {
+                    "name": "wheelLocal_mtx",
+                    "index": 2,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outputWorldMatrix",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "joints": true,
+            "wheel_radius": 3.5,
+            "wheel_axis_plane": "xy"
+        }
+    },
+    "696c9f83-29c3-11f0-8b8d-846993801060": {
+        "name": "wheel003_R",
+        "cmpt_tag": "wheel_01",
+        "guides_data": [
+            {
+                "name": "wheel003_R_wheel",
+                "world_matrix": [
+                    4.440892098500626e-16,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.0,
+                    -4.440892098500626e-16,
+                    0.0,
+                    -14.876174926757812,
+                    5.425958633422852,
+                    -19.11764144897461,
+                    1.0
+                ]
+            }
+        ],
+        "settings": {
+            "inputs": [
+                {
+                    "name": "componentPosition",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                },
+                {
+                    "name": "radius",
+                    "index": 1,
+                    "type": "double"
+                },
+                {
+                    "name": "wheelLocal_mtx",
+                    "index": 2,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outputWorldMatrix",
+                    "index": 0,
+                    "type": "doubleMatrix"
+                }
+            ],
+            "joints": true,
+            "wheel_radius": 3.5,
+            "wheel_axis_plane": "xy"
+        }
+    }
+}
