@@ -39,8 +39,6 @@ api.Attribute(leg_clampR11, f"minTransXLimit").set_value(0)
 api.Attribute(leg_clampR11, f"maxTransXLimitEnable").set_value(True)
 api.Attribute(leg_clampR11, f"maxTransXLimit").set_value(13)
 api.Attribute(leg_clampR12, "translate").locked = True
-api.Attribute(leg_clampR12, "rotateX").locked = True
-api.Attribute(leg_clampR12, "rotateY").locked = True
 api.Attribute(leg_clampR12, "scale").locked = True
 api.Attribute(leg_clampR13, "translate").locked = True
 api.Attribute(leg_clampR13, "rotateX").locked = True
@@ -82,8 +80,6 @@ api.Attribute(leg_clampR21, f"minTransXLimit").set_value(0)
 api.Attribute(leg_clampR21, f"maxTransXLimitEnable").set_value(True)
 api.Attribute(leg_clampR21, f"maxTransXLimit").set_value(13)
 api.Attribute(leg_clampR22, "translate").locked = True
-api.Attribute(leg_clampR22, "rotateX").locked = True
-api.Attribute(leg_clampR22, "rotateY").locked = True
 api.Attribute(leg_clampR22, "scale").locked = True
 api.Attribute(leg_clampR23, "translate").locked = True
 api.Attribute(leg_clampR23, "rotateX").locked = True
@@ -125,8 +121,6 @@ api.Attribute(leg_clampL11, f"minTransXLimit").set_value(0)
 api.Attribute(leg_clampL11, f"maxTransXLimitEnable").set_value(True)
 api.Attribute(leg_clampL11, f"maxTransXLimit").set_value(13)
 api.Attribute(leg_clampL12, "translate").locked = True
-api.Attribute(leg_clampL12, "rotateX").locked = True
-api.Attribute(leg_clampL12, "rotateY").locked = True
 api.Attribute(leg_clampL12, "scale").locked = True
 api.Attribute(leg_clampL13, "translate").locked = True
 api.Attribute(leg_clampL13, "rotateX").locked = True
@@ -168,8 +162,6 @@ api.Attribute(leg_clampL21, f"minTransXLimit").set_value(0)
 api.Attribute(leg_clampL21, f"maxTransXLimitEnable").set_value(True)
 api.Attribute(leg_clampL21, f"maxTransXLimit").set_value(13)
 api.Attribute(leg_clampL22, "translate").locked = True
-api.Attribute(leg_clampL22, "rotateX").locked = True
-api.Attribute(leg_clampL22, "rotateY").locked = True
 api.Attribute(leg_clampL22, "scale").locked = True
 api.Attribute(leg_clampL23, "translate").locked = True
 api.Attribute(leg_clampL23, "rotateX").locked = True
