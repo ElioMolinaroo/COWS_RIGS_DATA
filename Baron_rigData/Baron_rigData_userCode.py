@@ -63,5 +63,18 @@ hinge_attr.max = math.radians(35)
 for i in range(22):
     hinge_attr.connect_to(f"hinge_{str(i+1).zfill(3)}_jnt.rotateZ")
 
+# Connect the tweaks
+for side in ("L", "R"):
+    cmds.hide(f"armFK_{side}003_ctrl")
+    blend_output = api.Node(f"arm_{side}_blend_outputs", create=False)
+    inverse = api.Node(f"armTweaks_{side}_inverseMtx", "inverseMatrix")
+    api.Attribute(blend_output, "outputBlendMatrix001").connect_to(f"{inverse}.inputMatrix")
+    mtx, dcm = utilities.rig_utils.mult_matrices(name=f"armTweaks_{side}_elbowLocal", matrix_attrs=(api.Attribute(blend_output, "outputBlendMatrix002"), api.Attribute(inverse, "outputMatrix")), to_srt=True)
+    if side == "L":
+        api.Attribute(dcm, "outputRotate").connect_to(f"armTweaks_{side}002_srtBuffer.rotate")
+    else:
+        api.Attribute(dcm, "outputRotate").connect_to(f"armTweaks_{side}003_srtBuffer.rotate")
+    user_code_nodes += [inverse, mtx, dcm]
+
 
 cmds.container("Baron_RIG", edit=True, addNode=[i.name for i in user_code_nodes])
